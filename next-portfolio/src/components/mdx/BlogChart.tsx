@@ -29,16 +29,20 @@ interface ChartProps {
 }
 
 export default function BlogChart({
-    data,
+    data = [],
     type = "line",
     height = 350,
     title,
     description,
-    series
+    series = []
 }: ChartProps) {
+    // Guard against undefined/non-array props (next-mdx-remote v6 compatibility)
+    const safeData = Array.isArray(data) ? data : [];
+    const safeSeries = Array.isArray(series) ? series : [];
+
     const renderChart = () => {
         const commonProps = {
-            data: data,
+            data: safeData,
             margin: { top: 10, right: 10, left: 0, bottom: 0 }
         };
 
@@ -77,7 +81,7 @@ export default function BlogChart({
             return (
                 <BarChart {...commonProps}>
                     {components}
-                    {series.map((s, i) => (
+                    {safeSeries.map((s, i) => (
                         <Bar key={i} dataKey={s.key} name={s.name} fill={s.color} radius={[4, 4, 0, 0]} />
                     ))}
                 </BarChart>
@@ -88,7 +92,7 @@ export default function BlogChart({
             return (
                 <AreaChart {...commonProps}>
                     <defs>
-                        {series.map((s, i) => (
+                        {safeSeries.map((s, i) => (
                             <linearGradient key={i} id={`color${s.key}`} x1="0" y1="0" x2="0" y2="1">
                                 <stop offset="5%" stopColor={s.color} stopOpacity={0.3} />
                                 <stop offset="95%" stopColor={s.color} stopOpacity={0} />
@@ -96,7 +100,7 @@ export default function BlogChart({
                         ))}
                     </defs>
                     {components}
-                    {series.map((s, i) => (
+                    {safeSeries.map((s, i) => (
                         <Area
                             key={i}
                             type="monotone"
@@ -115,7 +119,7 @@ export default function BlogChart({
         return (
             <LineChart {...commonProps}>
                 {components}
-                {series.map((s, i) => (
+                {safeSeries.map((s, i) => (
                     <Line
                         key={i}
                         type="monotone"
