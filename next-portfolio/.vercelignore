@@ -1,0 +1,29 @@
+# Exclude corrupt/temp directories
+node_modules_corrupt/
+.next_corrupt/
+
+# Exclude node_modules (Vercel installs them)
+node_modules/
+
+# Exclude build artifacts
+.next/
+out/
+
+# Exclude debug/log files
+*.log
+*.log.txt
+build_log.txt
+build_output.log
+build_output_2.log
+build_error_v2.log
+server.log
+debug-logic.js
+diagnose-search.js
+
+# Exclude test files
+testsprite_tests/
+
+# Exclude local docs
+BREADCRUMB_NAVIGATION.md
+HYDRATION_FIX.md
+RESPONSIVE_IMPROVEMENTS.md

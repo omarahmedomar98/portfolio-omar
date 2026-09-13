@@ -52,3 +52,5 @@ build_output.log
 build_output_2.log
 build_error_v2.log
 server.log
+
+.vercel
