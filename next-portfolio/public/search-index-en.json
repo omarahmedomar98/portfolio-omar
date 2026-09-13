@@ -1,0 +1,178 @@
+[
+  {
+    "id": "ai-in-accounting.en",
+    "title": "AI in Accounting: The Great Renaissance and the Fading of Traditional Boundaries",
+    "excerpt": "A comprehensive analytical study on the shift from traditional accounting to smart strategic management, and how AI is redefining the human role in the world of numbers.",
+    "type": "blog",
+    "url": "/en/blog/ai-in-accounting.en",
+    "lang": "en"
+  },
+  {
+    "id": "big-data-auditing.en",
+    "title": "Big Data in Auditing: From Samples to Total Reality",
+    "excerpt": "How 'Big Data' is transforming the auditor's work from random sampling to analyzing 100% of transactions, ensuring absolute transparency and unprecedented trust.",
+    "type": "blog",
+    "url": "/en/blog/big-data-auditing.en",
+    "lang": "en"
+  },
+  {
+    "id": "cbdc-central-banks.en",
+    "title": "Central Bank Digital Currencies (CBDC): The Dawn of a New Era for Money",
+    "excerpt": "Will national digital currencies replace paper cash? And what is their impact on individual privacy and the monetary policy of nations.",
+    "type": "blog",
+    "url": "/en/blog/cbdc-central-banks.en",
+    "lang": "en"
+  },
+  {
+    "id": "climate-finance.en",
+    "title": "Climate Finance: When the Economy Becomes a Shield for the Planet",
+    "excerpt": "Exploring the intersection of profit and sustainability. How 'Green Bonds' and carbon accounting are turning environmental action into a massive economic opportunity.",
+    "type": "blog",
+    "url": "/en/blog/climate-finance.en",
+    "lang": "en"
+  },
+  {
+    "id": "corporate-tax-evolution.en",
+    "title": "The Evolution of Corporate Tax: Navigating the Global Minimum Tax",
+    "excerpt": "How the OECD's global tax agreement is redefining corporate strategies and what the 15% minimum tax means for multinational enterprises.",
+    "type": "blog",
+    "url": "/en/blog/corporate-tax-evolution.en",
+    "lang": "en"
+  },
+  {
+    "id": "crypto-regulation.en",
+    "title": "Crypto Regulation: Between the Hammer of Oversight and the Anvil of Decentralization",
+    "excerpt": "Analyzing the global push for crypto frameworks like MiCA and the challenge of regulating an inherently borderless technology.",
+    "type": "blog",
+    "url": "/en/blog/crypto-regulation.en",
+    "lang": "en"
+  },
+  {
+    "id": "esg-reporting.en",
+    "title": "ESG Reporting: Measuring Beyond the Bottom Line",
+    "excerpt": "Why Environmental, Social, and Governance metrics are becoming as essential as financial statements for modern investors.",
+    "type": "blog",
+    "url": "/en/blog/esg-reporting.en",
+    "lang": "en"
+  },
+  {
+    "id": "financial-literacy-gen-z.en",
+    "title": "Financial Literacy for Gen Z: Investing in the Age of Social Media",
+    "excerpt": "How the TikTok generation is redefining investing and why digital-first financial education is the key to their future prosperity.",
+    "type": "blog",
+    "url": "/en/blog/financial-literacy-gen-z.en",
+    "lang": "en"
+  },
+  {
+    "id": "financial-modeling-intro.en",
+    "title": "Financial Modeling: Precision Governance in a World of Uncertainty",
+    "excerpt": "A guide for beginners and professionals on building mathematical models that predict company futures and help make investment decisions based on science, not emotion.",
+    "type": "blog",
+    "url": "/en/blog/financial-modeling-intro.en",
+    "lang": "en"
+  },
+  {
+    "id": "future-of-fintech.en",
+    "title": "The Future of FinTech: Beyond Payment Apps",
+    "excerpt": "Exploring the next wave of financial technology, from invisible banking to autonomous finance and the rise of decentralized protocols.",
+    "type": "blog",
+    "url": "/en/blog/future-of-fintech.en",
+    "lang": "en"
+  },
+  {
+    "id": "personal-finance-basics.en",
+    "title": "Personal Finance Basics: Building Your Wealth from Scratch",
+    "excerpt": "Practical tips for beginners on budgeting, saving, and the power of compound interest to achieve long-term financial freedom.",
+    "type": "blog",
+    "url": "/en/blog/personal-finance-basics.en",
+    "lang": "en"
+  },
+  {
+    "id": "risk-management-volatile-markets.en",
+    "title": "Risk Management in Volatile Markets: The Art of Resilience",
+    "excerpt": "How to protect your portfolio and business during economic storms using diversification, hedging, and the 'Black Swan' philosophy.",
+    "type": "blog",
+    "url": "/en/blog/risk-management-volatile-markets.en",
+    "lang": "en"
+  },
+  {
+    "id": "smb-financial-planning.en",
+    "title": "SMB Financial Planning: The Art of Survival in Stormy Oceans",
+    "excerpt": "A strategic guide for entrepreneurs on building a solid financial fortress that ensures continuity and growth amidst global economic fluctuations.",
+    "type": "blog",
+    "url": "/en/blog/smb-financial-planning.en",
+    "lang": "en"
+  },
+  {
+    "id": "supply-chain-finance.en",
+    "title": "Supply Chain Finance: Unlocking Liquidity in the Global Network",
+    "excerpt": "How technology and finance are merging to optimize working capital across complex supply chains, benefiting buyers, suppliers, and financiers alike.",
+    "type": "blog",
+    "url": "/en/blog/supply-chain-finance.en",
+    "lang": "en"
+  },
+  {
+    "id": "working-capital-management.en",
+    "title": "Working Capital Management: Balancing the Scales of Growth and Liquidity",
+    "excerpt": "Strategic analysis of how to manage current assets and liabilities to ensure the business machinery keeps turning without running out of cash.",
+    "type": "blog",
+    "url": "/en/blog/working-capital-management.en",
+    "lang": "en"
+  },
+  {
+    "id": "reporting",
+    "title": "Financial Reporting System",
+    "excerpt": "Advanced Excel-Based Financial Consolidation & Reporting",
+    "type": "project",
+    "url": "/en/projects/reporting",
+    "lang": "en"
+  },
+  {
+    "id": "inventory",
+    "title": "Inventory & Sales Tracker",
+    "excerpt": "Dynamic Stock Management & Sales Integration",
+    "type": "project",
+    "url": "/en/projects/inventory",
+    "lang": "en"
+  },
+  {
+    "id": "cashflow",
+    "title": "Cash Flow Dashboard",
+    "excerpt": "Real-time Liquidity Tracking & Forecasting",
+    "type": "project",
+    "url": "/en/projects/cashflow",
+    "lang": "en"
+  },
+  {
+    "id": "accounting",
+    "title": "Custom Accounting System",
+    "excerpt": "Bespoke Bookkeeping Solution for Small Projects",
+    "type": "project",
+    "url": "/en/projects/accounting",
+    "lang": "en"
+  },
+  {
+    "id": "advisory",
+    "title": "Financial Advisory",
+    "excerpt": "Strategic guidance for business growth.",
+    "type": "service",
+    "url": "/en#services",
+    "lang": "en"
+  },
+  {
+    "id": "tax",
+    "title": "Tax Strategy",
+    "excerpt": "Optimizing corporate tax compliance.",
+    "type": "service",
+    "url": "/en#services",
+    "lang": "en"
+  },
+  {
+    "id": "skills",
+    "title": "Professional Skills",
+    "excerpt": "Advanced Excel, Dynamics 365, Financial Modeling, IFRS.",
+    "type": "service",
+    "url": "/en#skills",
+    "lang": "en"
+  }
+]

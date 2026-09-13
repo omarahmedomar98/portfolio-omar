@@ -1,0 +1,278 @@
+[
+  {
+    "id": "TC001",
+    "title": "Global Navigation Links Functional",
+    "description": "Verify that all links in the global navigation bar navigate to the correct portfolio sections and pages without errors.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load the homepage"
+      },
+      {
+        "type": "action",
+        "description": "Click each link in the global navigation bar"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm the page scrolls or navigates correctly to corresponding portfolio sections or pages"
+      }
+    ]
+  },
+  {
+    "id": "TC002",
+    "title": "Footer Links Functionality",
+    "description": "Ensure all footer links navigate correctly and function consistently across the website.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Scroll to the footer on multiple pages"
+      },
+      {
+        "type": "action",
+        "description": "Click each footer link"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify navigation to the correct section or external site occurs without error"
+      }
+    ]
+  },
+  {
+    "id": "TC003",
+    "title": "Portfolio Sections Content Display",
+    "description": "Validate that each portfolio section (Hero, About, Skills, Projects, Experience, Services, Contact, Objective, Showcase, CV) loads with correct and complete content.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to each portfolio section via navigation or direct scroll"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify all text, images, and data in each section are present and accurate"
+      }
+    ]
+  },
+  {
+    "id": "TC004",
+    "title": "FinancialCalculator Basic Operation",
+    "description": "Test FinancialCalculator component inputs and outputs calculation results accurately and dynamically.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Enter a valid principal amount, rate of return, and period into FinancialCalculator"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the calculation result matches expected financial formula outputs"
+      },
+      {
+        "type": "action",
+        "description": "Change input values and verify the output updates immediately"
+      },
+      {
+        "type": "assertion",
+        "description": "Check output recalculates correctly on input change"
+      }
+    ]
+  },
+  {
+    "id": "TC005",
+    "title": "InvestmentComparison Tool Accuracy",
+    "description": "Verify the InvestmentComparison tool computes and displays investment options comparison correctly for different inputs.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Input multiple investment scenarios with varied amounts, rates, and durations"
+      },
+      {
+        "type": "assertion",
+        "description": "Check the displayed comparison summary and charts accurately reflect input data and financial calculations"
+      },
+      {
+        "type": "action",
+        "description": "Modify input values and ensure comparison results update correctly"
+      }
+    ]
+  },
+  {
+    "id": "TC006",
+    "title": "PortfolioBuilder Interaction and Output",
+    "description": "Ensure PortfolioBuilder allows input of portfolio parameters and produces correct allocation and projections.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Input asset types, amounts, and allocation preferences"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify the portfolio summary and projections are computed accurately and displayed clearly"
+      },
+      {
+        "type": "action",
+        "description": "Test edge inputs such as zero amounts or very large values"
+      },
+      {
+        "type": "assertion",
+        "description": "Check system handles edge cases gracefully without errors"
+      }
+    ]
+  },
+  {
+    "id": "TC007",
+    "title": "Search Functionality Returns Relevant Results",
+    "description": "Test that the site-wide search returns content accurately and highlights matched terms across portfolio and blog content.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Open search overlay and enter specific keywords related to portfolio content"
+      },
+      {
+        "type": "assertion",
+        "description": "Validate returned results include correct matches relevant to keywords"
+      },
+      {
+        "type": "action",
+        "description": "Search using terms from blog posts including multiple languages"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm returned blog posts include correct MDX processed content with highlights on matched terms"
+      }
+    ]
+  },
+  {
+    "id": "TC008",
+    "title": "Blog Content Loading and MDX Rendering",
+    "description": "Verify that blog posts load successfully with correct MDX processing and display properly for all supported languages.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to blog section and open blog posts in default language"
+      },
+      {
+        "type": "assertion",
+        "description": "Check all MDX content such as code blocks, images, and formatted text render correctly"
+      },
+      {
+        "type": "action",
+        "description": "Switch blog language and open posts in alternative languages"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify multilingual blog posts load with correct localized content and formatting"
+      }
+    ]
+  },
+  {
+    "id": "TC009",
+    "title": "Animation Wrappers Smooth Transition",
+    "description": "Ensure that animations embedded in AnimatedSection components trigger smoothly and do not cause UI glitches or performance degradation.",
+    "category": "ui",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load pages with AnimatedSection components and observe transition animations"
+      },
+      {
+        "type": "assertion",
+        "description": "Check animations run smoothly on various devices and screen sizes without jank or visual artifacts"
+      },
+      {
+        "type": "action",
+        "description": "Rapidly navigate between sections with animations"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm no animation overlap or UI freeze occurs"
+      }
+    ]
+  },
+  {
+    "id": "TC010",
+    "title": "Contact Section Form Submission",
+    "description": "Validate that the Contact section form accepts valid inputs, handles errors gracefully, and submits requests successfully.",
+    "category": "functional",
+    "priority": "High",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Navigate to Contact section form"
+      },
+      {
+        "type": "action",
+        "description": "Fill form with valid details and submit"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify submission success response and confirmation message display"
+      },
+      {
+        "type": "action",
+        "description": "Submit form with missing or invalid fields"
+      },
+      {
+        "type": "assertion",
+        "description": "Check appropriate validation errors are shown and submission is blocked"
+      }
+    ]
+  },
+  {
+    "id": "TC011",
+    "title": "Search Performance Under Load",
+    "description": "Assess search functionality responsiveness and accuracy under heavy query load and rapid input changes.",
+    "category": "functional",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Perform rapid successive search queries with varied content terms"
+      },
+      {
+        "type": "assertion",
+        "description": "Confirm results update correctly with low latency and without errors"
+      },
+      {
+        "type": "action",
+        "description": "Execute multiple simultaneous search requests"
+      },
+      {
+        "type": "assertion",
+        "description": "Verify system handles concurrency without crashes or incorrect results"
+      }
+    ]
+  },
+  {
+    "id": "TC012",
+    "title": "Portfolio Section Edge Content Cases",
+    "description": "Validate handling of portfolio sections when no content or minimal data is available (e.g., empty projects or skills).",
+    "category": "error handling",
+    "priority": "Medium",
+    "steps": [
+      {
+        "type": "action",
+        "description": "Load portfolio sections configured with empty or minimal data"
+      },
+      {
+        "type": "assertion",
+        "description": "Check for graceful display such as placeholders, messages or empty states without errors or broken UI"
+      }
+    ]
+  }
+]

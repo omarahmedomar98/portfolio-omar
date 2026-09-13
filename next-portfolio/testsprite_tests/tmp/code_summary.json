@@ -1,0 +1,69 @@
+{
+    "tech_stack": [
+        "TypeScript",
+        "JavaScript",
+        "Next.js",
+        "React",
+        "TailwindCSS",
+        "MDX"
+    ],
+    "features": [
+        {
+            "name": "Navigation",
+            "description": "Global navigation bar and footer",
+            "files": [
+                "src/components/Navbar.tsx",
+                "src/components/Footer.tsx",
+                "src/components/ScrollToTop.tsx"
+            ]
+        },
+        {
+            "name": "Portfolio Sections",
+            "description": "Main portfolio content sections",
+            "files": [
+                "src/components/Hero.tsx",
+                "src/components/About.tsx",
+                "src/components/Skills.tsx",
+                "src/components/Projects.tsx",
+                "src/components/Experience.tsx",
+                "src/components/Services.tsx",
+                "src/components/Contact.tsx",
+                "src/components/Objective.tsx",
+                "src/components/Showcase.tsx",
+                "src/components/CVSection.tsx"
+            ]
+        },
+        {
+            "name": "Financial Tools",
+            "description": "Interactive financial calculators and tools",
+            "files": [
+                "src/components/FinancialCalculator.tsx",
+                "src/components/InvestmentComparison.tsx",
+                "src/components/PortfolioBuilder.tsx"
+            ]
+        },
+        {
+            "name": "Search",
+            "description": "Search functionality for the site",
+            "files": [
+                "src/components/SearchOverlay.tsx",
+                "src/lib/search.ts"
+            ]
+        },
+        {
+            "name": "Blog System",
+            "description": "Blog fetching and MDX processing",
+            "files": [
+                "src/lib/blog.ts",
+                "src/app/[lang]/blog/page.tsx"
+            ]
+        },
+        {
+            "name": "Animations",
+            "description": "Animation wrappers",
+            "files": [
+                "src/components/AnimatedSection.tsx"
+            ]
+        }
+    ]
+}

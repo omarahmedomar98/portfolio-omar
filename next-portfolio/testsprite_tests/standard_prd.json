@@ -1,0 +1,109 @@
+{
+  "meta": {
+    "project": "Personal Portfolio Website",
+    "date": "2026-01-21",
+    "prepared_by": "Software Development Manager"
+  },
+  "product_overview": "A personal portfolio website showcasing professional skills, projects, experience, and services, with integrated financial tools and a blog section to demonstrate expertise and engage users.",
+  "core_goals": [
+    "Present a clear and attractive professional profile.",
+    "Showcase projects and skills effectively.",
+    "Provide interactive financial calculators and investment comparison tools.",
+    "Enable easy navigation across portfolio and blog content.",
+    "Support multilingual blog content with MDX processing.",
+    "Ensure smooth user experience with animations and search functionality."
+  ],
+  "key_features": [
+    "Global navigation bar and footer for site-wide consistent navigation.",
+    "Portfolio sections including Hero, About, Skills, Projects, Experience, Services, Contact, Objective, Showcase, and CV sections.",
+    "Interactive financial calculators: FinancialCalculator, InvestmentComparison, PortfolioBuilder.",
+    "Search functionality to find content across the site.",
+    "Blog system with fetching and MDX processing for content management.",
+    "Animation wrappers to enhance UI transitions and engagement."
+  ],
+  "user_flow_summary": [
+    "Users land on the homepage featuring the Hero section and global navigation.",
+    "Users navigate through portfolio sections to learn about skills, projects, experience, and services.",
+    "Users interact with financial tools to calculate investments and build portfolios.",
+    "Users search for specific content using the search overlay feature.",
+    "Users browse the blog section with multilingual support to read posts.",
+    "Users can contact through the Contact section to request services or further info."
+  ],
+  "validation_criteria": [
+    "All navigation links and footer links function correctly across pages.",
+    "Portfolio sections load and display accurate content without errors.",
+    "Financial tools perform calculations accurately and update results interactively.",
+    "Search returns relevant results quickly and highlights matches.",
+    "Blog posts load correctly with proper MDX rendering and multilingual support.",
+    "Animations trigger smoothly without causing UI glitches or performance issues."
+  ],
+  "code_summary": {
+    "tech_stack": [
+      "TypeScript",
+      "JavaScript",
+      "Next.js",
+      "React",
+      "TailwindCSS",
+      "MDX"
+    ],
+    "features": [
+      {
+        "name": "Navigation",
+        "description": "Global navigation bar and footer",
+        "files": [
+          "src/components/Navbar.tsx",
+          "src/components/Footer.tsx",
+          "src/components/ScrollToTop.tsx"
+        ]
+      },
+      {
+        "name": "Portfolio Sections",
+        "description": "Main portfolio content sections",
+        "files": [
+          "src/components/Hero.tsx",
+          "src/components/About.tsx",
+          "src/components/Skills.tsx",
+          "src/components/Projects.tsx",
+          "src/components/Experience.tsx",
+          "src/components/Services.tsx",
+          "src/components/Contact.tsx",
+          "src/components/Objective.tsx",
+          "src/components/Showcase.tsx",
+          "src/components/CVSection.tsx"
+        ]
+      },
+      {
+        "name": "Financial Tools",
+        "description": "Interactive financial calculators and tools",
+        "files": [
+          "src/components/FinancialCalculator.tsx",
+          "src/components/InvestmentComparison.tsx",
+          "src/components/PortfolioBuilder.tsx"
+        ]
+      },
+      {
+        "name": "Search",
+        "description": "Search functionality for the site",
+        "files": [
+          "src/components/SearchOverlay.tsx",
+          "src/lib/search.ts"
+        ]
+      },
+      {
+        "name": "Blog System",
+        "description": "Blog fetching and MDX processing",
+        "files": [
+          "src/lib/blog.ts",
+          "src/app/[lang]/blog/page.tsx"
+        ]
+      },
+      {
+        "name": "Animations",
+        "description": "Animation wrappers",
+        "files": [
+          "src/components/AnimatedSection.tsx"
+        ]
+      }
+    ]
+  }
+}

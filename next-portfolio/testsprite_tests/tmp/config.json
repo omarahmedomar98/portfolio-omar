@@ -1,0 +1,16 @@
+{
+  "status": "commited",
+  "type": "frontend",
+  "scope": "codebase",
+  "localEndpoint": "http://localhost:3000",
+  "executionArgs": {
+    "projectName": "next-portfolio",
+    "projectPath": "e:\\portfolio\\next-portfolio",
+    "testIds": [],
+    "additionalInstruction": "Run all generated tests",
+    "envs": {
+      "API_KEY": "sk-user-psE0r2P5pYl_6MB1BueKxMcnbb80QcK6FbfZTZrVVmbduKJ0VCOjI8roODUJrp9hNxh1f-N0pFK5miOm6B_AbiCf2RwPht4bkaSvyf0HLAB52a9-DOGNopI0Csoev8fytXE"
+    }
+  },
+  "proxy": "http://e4e66758-d696-4f84-9a81-180daad7896a:j4EWAyaRuLORW7ySbHviGKT9jEapvmI4@tun.testsprite.com:8080"
+}
