@@ -16,7 +16,7 @@ const loadWorldGeoJson = () => {
     geoJsonLoading = true;
 
     // Try local file first (most reliable — served by Vite dev server / static host)
-    fetch('/data/world.json')
+    fetch('./data/world.json')
       .then((r) => {
         if (!r.ok) throw new Error(`HTTP ${r.status}`);
         return r.json();

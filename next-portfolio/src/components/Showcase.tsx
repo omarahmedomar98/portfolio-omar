@@ -49,7 +49,7 @@ export default function Showcase({ content, lang }: { content: any, lang: string
                         </div>
                     </div>
                 ) : (
-                    <div className="dashboard-iframe-container" style={{ width: '100%', height: '800px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-card)' }}>
+                    <div className="dashboard-iframe-container" style={{ width: '100%', height: '85vh', minHeight: '600px', borderRadius: '12px', overflow: 'hidden', border: '1px solid var(--border-color)', boxShadow: 'var(--shadow-card)' }}>
                         <iframe 
                             src={`/dashboard/index.html?lang=${lang}`} 
                             style={{ width: '100%', height: '100%', border: 'none' }}
