@@ -3,13 +3,17 @@
   "version": "1.0.0",
   "private": true,
   "description": "Root workspace runner for Portfolio (Next.js) and Dashboard (Vite)",
+  "workspaces": [
+    "next-portfolio",
+    "dashboard"
+  ],
   "scripts": {
-    "dev:portfolio": "cd next-portfolio && npm run dev",
-    "dev:dashboard": "cd dashboard && npm run dev",
-    "dev": "cd next-portfolio && npm run dev",
-    "build:portfolio": "cd next-portfolio && npm run build",
-    "build:dashboard": "cd dashboard && npm run build",
-    "build": "npm run build:portfolio && npm run build:dashboard",
-    "start": "cd next-portfolio && npm run dev"
+    "dev:portfolio": "npm --workspace=next-portfolio run dev",
+    "dev:dashboard": "npm --workspace=dashboard run dev",
+    "dev": "npm --workspace=next-portfolio run dev",
+    "build:dashboard": "npm --workspace=dashboard run build",
+    "build:portfolio": "npm --workspace=next-portfolio run build",
+    "build": "cd next-portfolio && npm run build",
+    "start": "npm --workspace=next-portfolio run start"
   }
 }
