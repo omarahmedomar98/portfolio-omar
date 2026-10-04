@@ -108,11 +108,11 @@ export default function Contact({ content, lang }: { content: any, lang: string 
             });
 
             if (response.ok) {
+                formRef.current?.reset();
                 showToast(
                     isEn ? "✅ Message sent successfully!" : "✅ تم إرسال الرسالة بنجاح!",
                     "success"
                 );
-                formRef.current?.reset();
             } else {
                 throw new Error("Failed");
             }
@@ -121,15 +121,15 @@ export default function Contact({ content, lang }: { content: any, lang: string 
             const subject = `Portfolio Contact from ${name}`;
             const body = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
             const mailtoLink = `mailto:meroking1998@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
-            window.location.href = mailtoLink;
 
+            formRef.current?.reset();
             showToast(
                 isEn
                     ? "📧 Opening your email client..."
                     : "📧 جاري فتح تطبيق البريد...",
                 "success"
             );
-            formRef.current?.reset();
+            window.location.href = mailtoLink;
         } finally {
             setIsSubmitting(false);
         }

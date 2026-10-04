@@ -8,7 +8,7 @@ import { AnalyticalInsights } from './components/AnalyticalInsights';
 import { DataTable } from './components/DataTable';
 import { fetchSampleData, parseUploadedFile, processData, EMBEDDED_DEMO_DATASET, getEmbeddedDemoData } from './utils/dataParser';
 import { translations } from './utils/translations';
-import { Upload, FileText, Calendar, BarChart3, LayoutDashboard, Globe, AlertCircle, RefreshCw, Sun, Moon } from 'lucide-react';
+import { Upload, FileText, Calendar, BarChart3, LayoutDashboard, Globe, AlertCircle, RefreshCw, Sun, Moon, ExternalLink } from 'lucide-react';
 import { motion } from 'framer-motion';
 
 function App() {
@@ -278,6 +278,18 @@ function App() {
               >
                 <Globe size={16} />
                 <span>{lang === 'en' ? 'العربية' : 'English'}</span>
+              </button>
+
+              {/* Open in New Tab Button */}
+              <button
+                onClick={() => window.open(window.location.href, '_blank')}
+                className={`flex items-center gap-1.5 p-2 sm:px-3 py-1.5 border rounded-lg transition-colors text-xs font-semibold cursor-pointer ${
+                  isDark ? 'bg-zinc-900 border-zinc-800 text-zinc-400 hover:text-white' : 'bg-slate-100 border-slate-300 text-slate-700 hover:text-slate-900'
+                }`}
+                title={lang === 'en' ? "Open in New Tab" : "فتح في تاب جديدة"}
+              >
+                <ExternalLink size={16} />
+                <span className="hidden sm:inline">{lang === 'en' ? "Open in New Tab" : "فتح في تاب جديدة"}</span>
               </button>
 
               <div className={`hidden md:flex items-center gap-2 text-xs px-3.5 py-1.5 rounded-lg border ${

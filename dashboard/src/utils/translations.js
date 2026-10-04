@@ -116,13 +116,13 @@ export const translations = {
   },
 
   ar: {
-    title: "فين-تحليل",
+    title: "التحليلات المالية",
     source: "مصدر البيانات",
-    upload: "رفع ملف CSV / Excel",
+    upload: "رفع ملف بيانات CSV / Excel",
     lastUpdated: "آخر تحديث",
-    overview: "لوحة التحليلات المالية التنفيذية",
-    subtitle: "مُحرّك تحليلي متكامل بحسابات ديناميكية وتفاعلات فورية بين الفلاتر والرسوم البيانية.",
-    clearFilters: "إعادة ضبط جميع الفلاتر",
+    overview: "لوحة التحكم المالية",
+    subtitle: "محرك تحليلات متقدم مع حسابات ديناميكية وتحديث فوري للرسوم البيانية.",
+    clearFilters: "مسح جميع الفلاتر",
     activeFilters: "الفلاتر النشطة",
     themeToggle: "نمط المظهر",
     darkTheme: "الوضع الليلي",
@@ -167,15 +167,15 @@ export const translations = {
 
     // Chart Titles & Dimension Selectors
     charts: {
-      worldMap: "خريطة الإيرادات المالية العالمية التفاعلية",
+      worldMap: "التوزيع الجغرافي للإيرادات",
       revenueTrend: "اتجاه أداء الإيرادات والأرباح",
-      revenueVsExpenses: "مقارنة الإيرادات بالمصروفات شهرياً",
-      revenueSources: "توزيع الإيرادات حسب الأبعاد",
-      profitMarginTrend: "تذبذب نسبة هامش الربح",
+      revenueVsExpenses: "مقارنة الإيرادات والمصروفات",
+      revenueSources: "تحليل وتوزيع الإيرادات",
+      profitMarginTrend: "اتجاهات هامش الربح",
       byCategory: "حسب الفئة",
       byRegion: "حسب المنطقة",
       byCountry: "حسب الدولة",
-      bySegment: "حسب الشريحة",
+      bySegment: "حسب القطاع",
       byChannel: "حسب القناة",
       revenueLine: "الإيرادات ($)",
       expensesLine: "المصروفات ($)",
@@ -231,3 +231,5 @@ export const translations = {
     }
   }
 };
+// utf-8 encoding fix
+

@@ -1,0 +1,34 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# Production builds
+.next/
+dist/
+build/
+out/
+
+# Environment and secrets (OWASP & Security best practices)
+.env
+.env*.local
+*.pem
+*.key
+*.cert
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+*.log.txt
+
+# Vercel & Editor
+.vercel
+.vscode/
+.idea/
+.DS_Store
+*.tsbuildinfo
+
+# Internal AI / agent artifacts
+.agents/

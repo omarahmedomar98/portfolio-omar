@@ -6,6 +6,7 @@ import Hero from "@/components/Hero";
 import About from "@/components/About";
 import Skills from "@/components/Skills";
 import Experience from "@/components/Experience";
+import Education from "@/components/Education";
 import Showcase from "@/components/Showcase";
 import Projects from "@/components/Projects";
 import Services from "@/components/Services";
@@ -44,6 +45,7 @@ export default async function Home({
                 <About content={content.about} />
                 <Skills content={content.skills} />
                 <Experience content={content.experience} data-aos="fade-up" />
+                <Education content={content.education} lang={lang} />
                 <Showcase content={content.dashboard} lang={lang} />
                 <Projects content={content.projects} lang={lang} data-aos="fade-up" />
                 <Services content={content.services} />

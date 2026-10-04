@@ -12,6 +12,21 @@ interface BlogFeedProps {
     lang: 'en' | 'ar';
 }
 
+const isWordChar = (ch: string | undefined) => ch !== undefined && /[\p{L}\p{N}]/u.test(ch);
+
+// Matches when `term` starts at a word boundary, so a query like "AI"
+// doesn't false-positive inside words like "climate" or "sustainability".
+const matchesTerm = (text: string, term: string): boolean => {
+    const lower = text.toLowerCase();
+    const t = term.toLowerCase();
+    let idx = lower.indexOf(t);
+    while (idx !== -1) {
+        if (idx === 0 || !isWordChar(lower[idx - 1])) return true;
+        idx = lower.indexOf(t, idx + 1);
+    }
+    return false;
+};
+
 export default function BlogFeed({ posts: serverPosts, lang }: BlogFeedProps) {
     const isEn = lang === 'en';
     const [allPosts, setAllPosts] = useState<SimplePost[]>(serverPosts);
@@ -42,9 +57,13 @@ export default function BlogFeed({ posts: serverPosts, lang }: BlogFeedProps) {
     }, [allPosts]);
 
     const filteredPosts = useMemo(() => {
+        const terms = searchQuery.trim().toLowerCase().split(/\s+/).filter(Boolean);
         return allPosts.filter(post => {
-            const matchesSearch = post.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-                post.excerpt.toLowerCase().includes(searchQuery.toLowerCase());
+            const matchesSearch = terms.length === 0 || terms.every(term =>
+                matchesTerm(post.title, term) ||
+                matchesTerm(post.excerpt, term) ||
+                (post.tags ?? []).some(tag => matchesTerm(tag, term))
+            );
             const matchesCategory = selectedCategory === 'All' || (post.tags && post.tags.includes(selectedCategory));
             return matchesSearch && matchesCategory;
         });

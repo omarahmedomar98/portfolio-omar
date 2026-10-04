@@ -161,6 +161,9 @@ export default function Hero({ content, lang }: { content: any; lang?: string })
                         width: 280px;
                         height: 280px;
                     }
+                    .hero-badge-row {
+                        justify-content: center;
+                    }
                 }
                 @media (max-width: 768px) {
                     .hero-corner-clock {
